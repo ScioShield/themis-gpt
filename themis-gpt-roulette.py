@@ -1,35 +1,31 @@
 import os
 import random
+import shutil
 
-def delete_random_files(directory):
-    # List all .toml files in the directory
-    files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f)) and f.endswith('.toml')]
-    
-    # Ensure there are at least 5 files
-    if len(files) < 10:
-        print("There are fewer than 10 .toml files in the directory. No files will be deleted.")
-        return
+def copy_random_files(source_directory, target_directory):
+    # Check if target directory exists, if not, create it
+    if not os.path.exists(target_directory):
+        os.makedirs(target_directory)
 
-    # Determine the number of files to delete
-    num_to_delete = int(len(files) * 0.9)
+    # List all .toml files in the source directory
+    files = [f for f in os.listdir(source_directory) if os.path.isfile(os.path.join(source_directory, f)) and f.endswith('.toml')]
     
-    # Randomly select files to delete
-    files_to_delete = random.sample(files, num_to_delete)
+    # Determine the number of files to copy: 10 or all of them if fewer than 10
+    num_to_copy = min(10, len(files))
     
-    # Confirm with the user
-    confirm = input(f"Are you sure you want to delete {num_to_delete} .toml files from {directory}? (yes/no): ")
-    if confirm.lower() != "yes":
-        print("Operation cancelled.")
-        return
+    # Randomly select files to copy
+    files_to_copy = random.sample(files, num_to_copy)
 
-    # Delete the files
-    for f in files_to_delete:
-        file_path = os.path.join(directory, f)
-        os.remove(file_path)
-        print(f"Deleted: {file_path}")
+    # Copy the files
+    for f in files_to_copy:
+        source_path = os.path.join(source_directory, f)
+        destination_path = os.path.join(target_directory, f)
+        shutil.copy(source_path, destination_path)
 
     print("Operation completed.")
 
-# Replace 'YOUR_DIRECTORY_PATH' with the path to your directory
-directory_path = input("Enter the path of the directory: ")
-delete_random_files(directory_path)
+# Input paths
+source_directory_path = input("Enter the path of the directory to COPY .toml files FROM: ")
+target_directory_path = input("Enter the path of the directory to COPY .toml files TO: ")
+
+copy_random_files(source_directory_path, target_directory_path)
