@@ -18,10 +18,6 @@ def call_openai_api(prompt, content, model="gpt-4"):
     summary = completion['choices'][0]['message']["content"]
     return summary
 
-import re
-
-import re
-
 def remove_text_from_file_regex(file_path, new_file_path):
     patterns_to_remove = [
         r'\[\[rule\.threat\]\]',
