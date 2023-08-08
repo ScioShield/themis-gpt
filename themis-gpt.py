@@ -2,6 +2,8 @@ import re
 import os
 import openai  # ensure you have imported the openai package
 from dotenv import load_dotenv
+from tqdm import tqdm
+import time
 
 def setup_api_credentials():
     load_dotenv()
@@ -54,15 +56,24 @@ def remove_text_from_file_regex(file_path, new_file_path):
         # Call the OpenAI API using the question and the processed text, and append the output to the new file
         api_output = call_openai_api(question, ''.join(parsed_lines))
         new_file.write("\n" + api_output)
+        time.sleep(0.5)
 
 def main():
     directory_path = input("Enter the path of the directory: ")
 
-    for filename in os.listdir(directory_path):
-        if filename.endswith('.toml'):
-            old_file = os.path.join(directory_path, filename)
-            new_file = os.path.join(directory_path, filename.rsplit('.', 1)[0] + ".parsed.toml")
-            remove_text_from_file_regex(old_file, new_file)
+    # Get all the .toml files
+    all_files = [f for f in os.listdir(directory_path) if f.endswith('.toml')]
+
+    # Filter out the .toml files which have a corresponding .parsed.toml
+    to_process = [f for f in all_files if not os.path.exists(os.path.join(directory_path, f.rsplit('.', 1)[0] + ".parsed.toml")) and not f.endswith(".parsed.toml")]
+
+    for filename in tqdm(to_process, desc="Processing files", unit="file"):
+        old_file = os.path.join(directory_path, filename)
+        new_file_name = filename.rsplit('.', 1)[0] + ".parsed.toml"
+        new_file = os.path.join(directory_path, new_file_name)
+
+        # Process the .toml file
+        remove_text_from_file_regex(old_file, new_file)
 
 if __name__ == "__main__":
     main()
