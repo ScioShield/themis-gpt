@@ -1,4 +1,4 @@
-All test with 612 rules from the follwoing from https://github.com/elastic/detection-rules.git:
+All test with 612 rules from the following from https://github.com/elastic/detection-rules.git:
 /rules/linux/
 /rules/windows/
 /rules/network/

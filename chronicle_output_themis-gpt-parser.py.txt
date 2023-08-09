@@ -1,0 +1,521 @@
+Overall Technique matches: 10 out of 33 (30.30% matched)
+Overall Subtechnique matches: 3 out of 18 (16.67% matched)
+
+For file gcp_cloudsql_config_changes.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file gcp_vpc_network_changes.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_phishing_alert.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file T1546_001_windows_change_default_file_association.yaral:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file workspace_suspicious_device_activity.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_user_granted_admin_privilege.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_unsanctioned_oauth_application_usage.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_new_api_token_created.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file gcp_no_project_api_keys.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file gcp_corporate_login_credentials.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file google_safebrowsing_with_prevalence.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file execute_remote_batch_script.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file T1564_001_windows_hidden_files.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file vt_relationships_file_downloaded_from_ip.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_new_user_added.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_user_login_out_of_hours.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file workspace_user_suspended_by_admin.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file gcp_service_account_noadmin.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file google_safebrowsing_file_contacts_tor_exit_node.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_user_rejected_multiple_push_notifications.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file network_connection_tor_exit_nodes.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file ioc_domain_internal_policy.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file whois_expired_domain_accessed.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file unusual_location_lnk_file.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file network_http_low_prevalence_domain_access.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_failed_screen_unlock.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file logins_from_terminated_employees.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file gcp_log_deletion.yaral:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file workspace_suspicious_login.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file execute_remote_cscript.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file T1548_002_windows_uac_bypass.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file dns_query_to_recently_created_domain.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file T1543_004_macos_launch_daemon.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file gcp_ssh_lateral_movement.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file geoip_user_login_from_multiple_states_or_countries.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file suspicious_asn.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_external_domain_user_added.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file T1053_005_windows_creation_of_scheduled_task.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file workspace_drive_settings_changed.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file suspicious_asn_watchlist.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file unusual_location_svchost_execution.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file ioc_hash_prevalence.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file vt_relationships_file_contacts_domain.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_threatinsight_login_failure_with_high_unknown_users.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file gcp_dns_modification.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_admin_login_without_2fa.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file access_to_windows_setup_files.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file unusual_location_svchost_write.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_threatinsight_suspected_password_spray_attack.yaral:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file gcp_firewall_rule_changes.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file command_service_control.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file T1564_001_macos_hidden_files_and_directories.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file high_risk_user_download_executable_from_macro.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file gcp_project_ownership_changes.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file gcti_tor_exit_nodes.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file google_safebrowsing_file_process_creation.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file gcp_audit_config_changes.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file outbound_traffic_elasticsearch.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file ioc_ip_target.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file command_shutdown.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file T1037_001_windows_logon_script.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file gcp_project_level_iam.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_user_logins_from_multiple_cities.yaral:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file T1021_002_windows_admin_share.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file okta_threatinsight_suspected_brute_force_attack.yaral:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file workspace_user_suspended_suspicious_activity.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_calendar_settings_changed.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_user_suspended_spamming_through_relay.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_phishing_detection_with_fastpass_origin_check.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file outbound_traffic_tor.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file T1543_001_macos_launch_agent.yaral:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file outbound_traffic_irc.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_user_unsuspended_by_admin.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file whois_recently_created_domain_access.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_user_suspicious_activity_reported.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file gcp_configured_sinks.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file gcp_vpc_network_route_changes.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_user_failed_number_challenge_during_push_notification.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file workspace_super_user_login.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file network_connection_first_seen_in_past_day.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file T1218_005_windows_mshta_remote_usage.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file workspace_custom_role_created.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file change_in_hosts_file.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_device_compromised.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file gcp_multifactor_authentication.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_multiple_failed_requests_to_access_applications.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file whois_expired_domain_executable_downloaded.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_user_account_lockout.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file command_net_user.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file network_traffic_to_specific_country.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file command_psexec.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_public_documents.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file vt_relationships_file_contacts_tor_ip.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_user_deleted.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file domain_prevalence.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file gcti_remote_access_tools.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file hash_prevalence.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file gcp_gcs_iam_changes.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file vt_relationships_file_contacts_ip.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file gcp_managed_service_account_keys.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file ip_target_prevalence.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file ioc_sha256_hash.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_suspicious_use_of_a_session_cookie.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file okta_multiple_users_logins_with_invalid_credentials_from_the_same_ip.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file vt_relationships_file_downloaded_from_url.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_mobile_setting_changed.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_suspicious_programmatic_login.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file traffic_port_666.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file gcti_benign_binaries_contacts_tor_exit_node.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file process_launch_vt_enrichment.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file ioc_domain_C2.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_gmail_settings_changed.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_user_admin_privilege_revoked.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_successful_high_risk_user_logins.yaral:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file T1547_001_windows_registry_run_keys_startup_folder.yaral:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file gcp_gcs_public_accessible.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_mismatch_between_source_and_response_for_verify_push_request.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file safebrowsing_process_creation_hashes_seen_more_than_7_days.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_government_backed_attacks.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_2step_verification_disabled.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_leaked_password.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file workspace_user_changed_password.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_mfa_brute_force_attack.yaral:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file low_prevalence_hash_on_process_launch_low_prevalence_domain_accessed.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file ioc_sha256_hash_vt.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file vt_relationships_file_executes_file.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file okta_threatinsight_targeted_brute_force_attack.yaral:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file gcp_custom_role_changes.yaral:
+Techniques matched: 0/0
+Subtechniques matched: 0/0
+
+For file T1564_001_windows_system_files.yaral:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+Overall Technique matches: 10 out of 33 (30.30% matched)
+Overall Subtechnique matches: 3 out of 18 (16.67% matched)
