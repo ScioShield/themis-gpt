@@ -28,16 +28,45 @@ def extract_ids_from_parsed(file_path):
 
     return technique_matches, subtechnique_matches
 
+def extract_ids_from_yar(file_path):
+    url_pattern = r'(?:reference|mitre_attack_url) = "https://attack\.mitre\.org/techniques/(T\d{4})(?:/(\d{3}))?/?'
+
+    with open(file_path, 'r') as file:
+        content = file.read()
+
+    matches = re.findall(url_pattern, content)
+
+    technique_matches = [match[0] for match in matches]
+    subtechnique_matches = [f"{match[0]}.{match[1]}" for match in matches if match[1]]
+
+    return technique_matches, subtechnique_matches
 
 def compare_ids_for_file(raw_file, parsed_file):
-    raw_techniques, raw_subtechniques = extract_ids_from_raw(raw_file)
-    parsed_techniques, parsed_subtechniques = extract_ids_from_parsed(parsed_file)
-    
-    matched_techniques = len(set(raw_techniques).intersection(set(parsed_techniques)))
-    matched_subtechniques = len(set(raw_subtechniques).intersection(set(parsed_subtechniques)))
-    
-    return matched_techniques, len(raw_techniques), matched_subtechniques, len(raw_subtechniques)
+    if raw_file.endswith('.toml'):
+        raw_techniques, raw_subtechniques = extract_ids_from_raw(raw_file)
+        parsed_techniques, parsed_subtechniques = extract_ids_from_parsed(parsed_file)
 
+        m_tech = len(set(raw_techniques).intersection(set(parsed_techniques)))
+        t_tech = len(raw_techniques)
+        m_subtech = len(set(raw_subtechniques).intersection(set(parsed_subtechniques)))
+        t_subtech = len(raw_subtechniques)
+        
+        return m_tech, t_tech, m_subtech, t_subtech
+
+    elif raw_file.endswith('.yaral'):
+        raw_techniques, raw_subtechniques = extract_ids_from_yar(raw_file)
+        parsed_techniques, parsed_subtechniques = extract_ids_from_parsed(parsed_file)
+
+        m_tech = len(set(raw_techniques).intersection(set(parsed_techniques)))
+        t_tech = len(raw_techniques)
+        m_subtech = len(set(raw_subtechniques).intersection(set(parsed_subtechniques)))
+        t_subtech = len(raw_subtechniques)
+
+        return m_tech, t_tech, m_subtech, t_subtech
+
+    else:
+        return 0, 0, 0, 0  # Unsupported file type
+    
 def main():
     directory_path = input("Enter the path of the directory: ")
 
@@ -61,6 +90,28 @@ def main():
             print(f"Techniques matched: {m_tech}/{t_tech}")
             print(f"Subtechniques matched: {m_subtech}/{t_subtech}\n")
 
+        elif filename.endswith('.yaral') and not filename.endswith('.parsed.yaral'):
+            raw_file = os.path.join(directory_path, filename)
+            parsed_file = os.path.join(directory_path, filename.rsplit('.', 1)[0] + ".parsed.yaral")
+            
+            # Using the function specific to yar files
+            raw_techniques, raw_subtechniques = extract_ids_from_yar(raw_file)
+            parsed_techniques, parsed_subtechniques = extract_ids_from_parsed(parsed_file)
+
+            m_tech = len(set(raw_techniques).intersection(set(parsed_techniques)))
+            t_tech = len(raw_techniques)
+            m_subtech = len(set(raw_subtechniques).intersection(set(parsed_subtechniques)))
+            t_subtech = len(raw_subtechniques)
+
+            matched_techniques += m_tech
+            total_techniques += t_tech
+            matched_subtechniques += m_subtech
+            total_subtechniques += t_subtech
+
+            print(f"For file {filename}:")
+            print(f"Techniques matched: {m_tech}/{t_tech}")
+            print(f"Subtechniques matched: {m_subtech}/{t_subtech}\n")
+
     technique_match_percentage = (matched_techniques / total_techniques) * 100 if total_techniques else 0
     subtechnique_match_percentage = (matched_subtechniques / total_subtechniques) * 100 if total_subtechniques else 0
 
@@ -69,4 +120,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
