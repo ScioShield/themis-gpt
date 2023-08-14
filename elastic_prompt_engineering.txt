@@ -1,0 +1,548 @@
+Rules used   
+
+command_and_control_cobalt_strike_beacon.toml
+command_and_control_fin7_c2_behavior.toml
+command_and_control_halfbaked_beacon.toml
+command_and_control_rdp_remote_desktop_protocol_from_the_internet.toml
+command_and_control_tunneling_via_earthworm.toml
+command_and_control_vnc_virtual_network_computing_from_the_internet.toml
+command_and_control_vnc_virtual_network_computing_to_the_internet.toml
+credential_access_moving_registry_hive_via_smb.toml
+credential_access_posh_invoke_ninjacopy.toml
+credential_access_posh_minidump.toml
+defense_evasion_deletion_of_bash_command_line_history.toml
+defense_evasion_enable_network_discovery_with_netsh.toml
+defense_evasion_execution_msbuild_started_by_office_app.toml
+defense_evasion_masquerading_space_after_filename.toml
+defense_evasion_wsl_enabled_via_dism.toml
+discovery_potential_network_sweep_detected.toml
+discovery_potential_port_scan_detected.toml
+discovery_virtual_machine_fingerprinting_grep.toml
+execution_pentest_eggshell_remote_admin_tool.toml
+execution_revershell_via_shell_cmd.toml
+execution_shell_evasion_linux_binary.toml
+execution_shell_suspicious_parent_child_revshell_linux.toml
+execution_suspicious_jar_child_process.toml
+impact_hosts_file_modified.toml
+impact_process_kill_threshold.toml
+initial_access_evasion_suspicious_htm_file_creation.toml
+initial_access_rpc_remote_procedure_call_from_the_internet.toml
+initial_access_smb_windows_file_sharing_activity_to_the_internet.toml
+lateral_movement_dcom_shellwindow_shellbrowserwindow.toml
+persistence_credential_access_modify_auth_module_or_config.toml
+persistence_init_d_file_creation.toml
+persistence_linux_backdoor_user_creation.toml
+persistence_linux_user_added_to_privileged_group.toml
+persistence_local_scheduled_task_scripting.toml
+persistence_systemd_scheduled_timer_created.toml
+persistence_systemd_service_creation.toml
+privilege_escalation_overlayfs_local_privesc.toml
+privilege_escalation_setuid_setgid_bit_set_via_chmod.toml
+privilege_escalation_sudoers_file_mod.toml
+privilege_escalation_via_rogue_named_pipe.toml
+
+One shot Neutral Prompt  
+
+Overall Technique matches: 25 out of 56 (44.64% matched)
+Overall Subtechnique matches: 7 out of 33 (21.21% matched)
+
+For file execution_pentest_eggshell_remote_admin_tool.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file privilege_escalation_sudoers_file_mod.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file execution_suspicious_jar_child_process.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file persistence_linux_user_added_to_privileged_group.toml:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file privilege_escalation_overlayfs_local_privesc.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file discovery_potential_network_sweep_detected.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/1
+
+For file persistence_linux_backdoor_user_creation.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file persistence_init_d_file_creation.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file command_and_control_cobalt_strike_beacon.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/1
+
+For file impact_hosts_file_modified.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file persistence_systemd_service_creation.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/2
+
+For file impact_process_kill_threshold.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file credential_access_posh_minidump.toml:
+Techniques matched: 2/2
+Subtechniques matched: 2/2
+
+For file command_and_control_fin7_c2_behavior.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/1
+
+For file initial_access_evasion_suspicious_htm_file_creation.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/3
+
+For file persistence_local_scheduled_task_scripting.toml:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file execution_shell_evasion_linux_binary.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file credential_access_moving_registry_hive_via_smb.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/2
+
+For file defense_evasion_deletion_of_bash_command_line_history.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file execution_shell_suspicious_parent_child_revshell_linux.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/1
+
+For file credential_access_posh_invoke_ninjacopy.toml:
+Techniques matched: 1/3
+Subtechniques matched: 1/3
+
+For file persistence_systemd_scheduled_timer_created.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file defense_evasion_enable_network_discovery_with_netsh.toml:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file privilege_escalation_setuid_setgid_bit_set_via_chmod.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file command_and_control_rdp_remote_desktop_protocol_from_the_internet.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/0
+
+For file execution_revershell_via_shell_cmd.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file defense_evasion_execution_msbuild_started_by_office_app.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file lateral_movement_dcom_shellwindow_shellbrowserwindow.toml:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file command_and_control_tunneling_via_earthworm.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file persistence_credential_access_modify_auth_module_or_config.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/0
+
+For file initial_access_rpc_remote_procedure_call_from_the_internet.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file initial_access_smb_windows_file_sharing_activity_to_the_internet.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/0
+
+For file command_and_control_halfbaked_beacon.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/1
+
+For file command_and_control_vnc_virtual_network_computing_from_the_internet.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/0
+
+For file defense_evasion_wsl_enabled_via_dism.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file defense_evasion_masquerading_space_after_filename.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file discovery_potential_port_scan_detected.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/1
+
+For file command_and_control_vnc_virtual_network_computing_to_the_internet.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file discovery_virtual_machine_fingerprinting_grep.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file privilege_escalation_via_rogue_named_pipe.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+Overall Technique matches: 25 out of 56 (44.64% matched)
+Overall Subtechnique matches: 7 out of 33 (21.21% matched)
+
+Multi Shot Neutral Prompt
+
+Overall Technique matches: 26 out of 56 (46.43% matched)
+Overall Subtechnique matches: 5 out of 33 (15.15% matched)
+
+For file execution_pentest_eggshell_remote_admin_tool.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file privilege_escalation_sudoers_file_mod.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file execution_suspicious_jar_child_process.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file persistence_linux_user_added_to_privileged_group.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file privilege_escalation_overlayfs_local_privesc.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file discovery_potential_network_sweep_detected.toml:
+Techniques matched: 2/2
+Subtechniques matched: 0/1
+
+For file persistence_linux_backdoor_user_creation.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file persistence_init_d_file_creation.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file command_and_control_cobalt_strike_beacon.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/1
+
+For file impact_hosts_file_modified.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file persistence_systemd_service_creation.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/2
+
+For file impact_process_kill_threshold.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file credential_access_posh_minidump.toml:
+Techniques matched: 2/2
+Subtechniques matched: 2/2
+
+For file command_and_control_fin7_c2_behavior.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/1
+
+For file initial_access_evasion_suspicious_htm_file_creation.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/3
+
+For file persistence_local_scheduled_task_scripting.toml:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file execution_shell_evasion_linux_binary.toml:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file credential_access_moving_registry_hive_via_smb.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/2
+
+For file defense_evasion_deletion_of_bash_command_line_history.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file execution_shell_suspicious_parent_child_revshell_linux.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/1
+
+For file credential_access_posh_invoke_ninjacopy.toml:
+Techniques matched: 0/3
+Subtechniques matched: 0/3
+
+For file persistence_systemd_scheduled_timer_created.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file defense_evasion_enable_network_discovery_with_netsh.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file privilege_escalation_setuid_setgid_bit_set_via_chmod.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file command_and_control_rdp_remote_desktop_protocol_from_the_internet.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/0
+
+For file execution_revershell_via_shell_cmd.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file defense_evasion_execution_msbuild_started_by_office_app.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file lateral_movement_dcom_shellwindow_shellbrowserwindow.toml:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file command_and_control_tunneling_via_earthworm.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file persistence_credential_access_modify_auth_module_or_config.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/0
+
+For file initial_access_rpc_remote_procedure_call_from_the_internet.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file initial_access_smb_windows_file_sharing_activity_to_the_internet.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/0
+
+For file command_and_control_halfbaked_beacon.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/1
+
+For file command_and_control_vnc_virtual_network_computing_from_the_internet.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/0
+
+For file defense_evasion_wsl_enabled_via_dism.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file defense_evasion_masquerading_space_after_filename.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file discovery_potential_port_scan_detected.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/1
+
+For file command_and_control_vnc_virtual_network_computing_to_the_internet.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file discovery_virtual_machine_fingerprinting_grep.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file privilege_escalation_via_rogue_named_pipe.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+Overall Technique matches: 26 out of 56 (46.43% matched)
+Overall Subtechnique matches: 5 out of 33 (15.15% matched)
+
+Prompt Engineered Single Shot Method
+
+Overall Technique matches: 23 out of 56 (41.07% matched)
+Overall Subtechnique matches: 9 out of 33 (27.27% matched)
+
+For file execution_pentest_eggshell_remote_admin_tool.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file privilege_escalation_sudoers_file_mod.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file execution_suspicious_jar_child_process.toml:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file persistence_linux_user_added_to_privileged_group.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file privilege_escalation_overlayfs_local_privesc.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file discovery_potential_network_sweep_detected.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/1
+
+For file persistence_linux_backdoor_user_creation.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file persistence_init_d_file_creation.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file command_and_control_cobalt_strike_beacon.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/1
+
+For file impact_hosts_file_modified.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file persistence_systemd_service_creation.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/2
+
+For file impact_process_kill_threshold.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file credential_access_posh_minidump.toml:
+Techniques matched: 1/2
+Subtechniques matched: 1/2
+
+For file command_and_control_fin7_c2_behavior.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/1
+
+For file initial_access_evasion_suspicious_htm_file_creation.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/3
+
+For file persistence_local_scheduled_task_scripting.toml:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file execution_shell_evasion_linux_binary.toml:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file credential_access_moving_registry_hive_via_smb.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/2
+
+For file defense_evasion_deletion_of_bash_command_line_history.toml:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file execution_shell_suspicious_parent_child_revshell_linux.toml:
+Techniques matched: 1/2
+Subtechniques matched: 1/1
+
+For file credential_access_posh_invoke_ninjacopy.toml:
+Techniques matched: 1/3
+Subtechniques matched: 1/3
+
+For file persistence_systemd_scheduled_timer_created.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file defense_evasion_enable_network_discovery_with_netsh.toml:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file privilege_escalation_setuid_setgid_bit_set_via_chmod.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file command_and_control_rdp_remote_desktop_protocol_from_the_internet.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/0
+
+For file execution_revershell_via_shell_cmd.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file defense_evasion_execution_msbuild_started_by_office_app.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/1
+
+For file lateral_movement_dcom_shellwindow_shellbrowserwindow.toml:
+Techniques matched: 1/1
+Subtechniques matched: 1/1
+
+For file command_and_control_tunneling_via_earthworm.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file persistence_credential_access_modify_auth_module_or_config.toml:
+Techniques matched: 0/2
+Subtechniques matched: 0/0
+
+For file initial_access_rpc_remote_procedure_call_from_the_internet.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file initial_access_smb_windows_file_sharing_activity_to_the_internet.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/0
+
+For file command_and_control_halfbaked_beacon.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/1
+
+For file command_and_control_vnc_virtual_network_computing_from_the_internet.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/0
+
+For file defense_evasion_wsl_enabled_via_dism.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file defense_evasion_masquerading_space_after_filename.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/1
+
+For file discovery_potential_port_scan_detected.toml:
+Techniques matched: 1/2
+Subtechniques matched: 0/1
+
+For file command_and_control_vnc_virtual_network_computing_to_the_internet.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+For file discovery_virtual_machine_fingerprinting_grep.toml:
+Techniques matched: 1/1
+Subtechniques matched: 0/0
+
+For file privilege_escalation_via_rogue_named_pipe.toml:
+Techniques matched: 0/1
+Subtechniques matched: 0/0
+
+Overall Technique matches: 23 out of 56 (41.07% matched)
+Overall Subtechnique matches: 9 out of 33 (27.27% matched)ed)
+
+

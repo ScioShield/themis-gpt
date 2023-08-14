@@ -5,9 +5,9 @@ All test with 612 rules from the following from https://github.com/elastic/detec
 /rules/cross-platform/
 /rules/integrations/*/*.toml
 
-236436 words in all rules at an estamated cost of $20 for all API calls
+236436 words in all rules at an estimated cost of $20 for all API calls
 
-Removed for not contianing the '\[\[rule\.threat\.technique\]\]' pattern
+Removed for not containing the '\[\[rule\.threat\.technique\]\]' pattern
 
 command_and_control_nat_traversal_port_activity.toml
 container_workload_protection.toml
@@ -46,7 +46,7 @@ threat_intel_indicator_match_hash.toml
 threat_intel_indicator_match_registry.toml
 threat_intel_indicator_match_url.toml
 
-The follwoing rules were removed to ensure we are under the 2k token limit as they are all longer than 950 words
+The following rules were removed to ensure we are under the 2k token limit as they are all longer than 950 words
 
 collection_google_drive_ownership_transferred_via_google_workspace.toml
 command_and_control_common_webservices.toml
